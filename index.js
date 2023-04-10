@@ -126,7 +126,7 @@ function teamGen() {
         },
         {
           type: "input",
-          name: "engineerID",
+          name: "engineerId",
           message: "What is your engineer's ID?",
           validate: (answer) => {
             const pass = answer.match(/^[1-9]\d*$/);
@@ -175,7 +175,7 @@ function teamGen() {
         );
 
         teamArr.push(engineer);
-        idArr.push(answers.engineerID);
+        idArr.push(answers.engineerId);
         nextMember();
       });
   }
